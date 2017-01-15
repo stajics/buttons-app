@@ -27,13 +27,14 @@ class App extends Component {
             title="Button 2"
             onClick={() => { this.handleButtonClick(2); }}
             selected={selectedButtonId === 2}
-            content="button2 content"
+            content={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellat.`}
+
           />
           <ExpandableButton
             title="Button 3"
             onClick={() => { this.handleButtonClick(3); }}
             selected={selectedButtonId === 3}
-            content="button3 content"
+            content={`Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellat.`}
           />
         </div>
       </div>

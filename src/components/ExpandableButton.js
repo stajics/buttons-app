@@ -19,7 +19,7 @@ const defaultProps = {
 
 const ExpandableButton = ({ title, selected, content, onClick }) => (
   <div className="expandable-button">
-    <button onClick={onClick} className={`btn ${selected ? 'btn-primary' : 'btn-default'}`}>{title}</button>
+    <button onClick={onClick} className={`button btn ${selected ? 'btn-primary' : 'btn-default'}`}>{title}</button>
     {selected ? <div>{content}</div> : null}
   </div>
 );
