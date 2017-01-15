@@ -9,7 +9,7 @@ Clone the repository and run the following commands under your project root:
 
 (prefered)
 ```
-yarn install
+yarn
 npm start
 ```
 or
