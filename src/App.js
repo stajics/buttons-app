@@ -13,25 +13,26 @@ class App extends Component {
   }
 
   render() {
+    const { selectedButtonId } = this.state;
     return (
       <div className="App">
         <div className="App-buttons">
           <ExpandableButton
             title="Button 1"
             onClick={() => { this.handleButtonClick(1); }}
-            selected={this.state.selectedButtonId === 1}
+            selected={selectedButtonId === 1}
             content="button1 content"
           />
           <ExpandableButton
             title="Button 2"
             onClick={() => { this.handleButtonClick(2); }}
-            selected={this.state.selectedButtonId === 2}
+            selected={selectedButtonId === 2}
             content="button2 content"
           />
           <ExpandableButton
             title="Button 3"
             onClick={() => { this.handleButtonClick(3); }}
-            selected={this.state.selectedButtonId === 3}
+            selected={selectedButtonId === 3}
             content="button3 content"
           />
         </div>
