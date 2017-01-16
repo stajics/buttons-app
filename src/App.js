@@ -1,6 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 import ExpandableButton from './components/ExpandableButton';
+import ExpandableButtonGroup from './components/ExpandableButtonGroup';
+
+const buttonDefs = [
+  {
+    title: 'Button 1',
+    content: 'Button 1 content',
+  },
+  {
+    title: 'Button 2',
+    content: 'Button 2 content',
+  },
+  {
+    title: 'Button 3',
+    content: 'Button 3 content',
+  },
+];
 
 class App extends Component {
   constructor(props) {
@@ -37,6 +53,7 @@ class App extends Component {
             content={'button3 text'}
           />
         </div>
+        <ExpandableButtonGroup buttons={buttonDefs} />
       </div>
     );
   }
